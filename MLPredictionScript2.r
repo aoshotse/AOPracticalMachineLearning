@@ -144,7 +144,4 @@ fit2 <- train(classe~.,method="rf", data=thetrain)
 pred22 <- predict(fit2, newdata=thetest3) ## Final predictions
 
 
-## C B B B C B B C B B B B C B C C C C C C
-## not good, try using exactly the columns that were used to train
-## got exact same predictions
-## C B B B C B B C B B B B C B C C C C C C
+

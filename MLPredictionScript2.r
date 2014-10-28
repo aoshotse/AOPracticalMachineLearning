@@ -111,8 +111,8 @@ for (i in 1:length(sets)){
 fit1 <- train(classe~.,method="rf", data=ztrain)
 pred11 <- predict(fit1, newdata=ztest)
 ooser[5] <- 1 - confusionMatrix(ztest$classe, pred11)$overall[1]
-er <- 100 * mean(ooser) ## expected Out of Sample error rate
-
+er <- 100 * mean(ooser) 
+er ## expected Out of Sample error rate ##
 
 #############################################
 ## Prepare Final Train Data for Predicting ##
